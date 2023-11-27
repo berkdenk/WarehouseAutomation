@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+
+<AnchorPane prefHeight="675.0" prefWidth="700.0" style="-fx-background-color: #393e46;" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/15.0.1" fx:controller="application.stok_goruntule">
+   <children>
+      <TableView fx:id="tw_urunler" layoutX="250.0" layoutY="123.0" onMouseClicked="#secilen_deger" prefHeight="394.0" prefWidth="700.0" AnchorPane.bottomAnchor="281.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+        <columns>
+          <TableColumn fx:id="u_barkod" prefWidth="236.0" text="Ürün Barkod Numarasi" />
+          <TableColumn fx:id="u_ad" minWidth="1.0" prefWidth="243.0" text="Ürün Adı" />
+            <TableColumn fx:id="u_fiyat" prefWidth="115.0" text="Birim Başına Fiyat" />
+            <TableColumn fx:id="u_stok" prefWidth="105.0" text="Stok Adeti" />
+        </columns>
+      </TableView>
+      <TextField fx:id="txt_barkod" layoutX="117.0" layoutY="435.0" />
+      <TextField fx:id="txt_bfiyat" layoutX="418.0" layoutY="435.0" />
+      <TextField fx:id="txt_uad" layoutX="117.0" layoutY="488.0" />
+      <TextField fx:id="txt_sadet" layoutX="418.0" layoutY="488.0" />
+      <Button fx:id="btn_guncelle" layoutX="263.0" layoutY="544.0" mnemonicParsing="false" onAction="#guncellestir" prefHeight="42.0" prefWidth="149.0" style="-fx-background-color: #3d84b8;" text="Güncelleştir" textFill="WHITE">
+         <font>
+            <Font name="Arial Bold" size="16.0" />
+         </font>
+      </Button>
+      <Label layoutX="39.0" layoutY="439.0" text="Barkod No:" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Label>
+      <Label layoutX="39.0" layoutY="491.0" text="Ürün Adı:" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Label>
+      <Label layoutX="289.0" layoutY="438.0" text="Birim Başına Fiyat:" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Label>
+      <Label layoutX="336.0" layoutY="491.0" text="Stok Adeti:" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Label>
+      <Label fx:id="lbl_urun_hata" alignment="CENTER" layoutX="183.0" layoutY="602.0" prefHeight="20.0" prefWidth="300.0" text="HATA GORUNTULE" textFill="RED">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>

@@ -1,0 +1,22 @@
+Button {
+    -fx-background-color: 
+        transparent;
+
+ 
+    -fx-border-width: 0 2 0 0;
+    -fx-border-color:white;
+}
+Button Text {
+    -fx-effect: dropshadow( one-pass-box , rgba(0,0,0,0.8) , 0, 0.0 , 0 , 1);
+}
+Button:hover{
+    -fx-border-width: 0 0 0 0;
+    -fx-cursor: hand;
+    -fx-background-color: 
+    #e73739,
+        linear-gradient(#ec3538, #df484a),
+        linear-gradient(#cf282a, #ce2225),
+        linear-gradient(#f7484b, #bb2a2d);
+    
+    
+}
